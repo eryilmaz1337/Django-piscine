@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <script src="popup.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Contact From</h1>
+        <form id="contactForm">
+            <section> <!-- Bir form alanını kapsar -->
+                <label for="firstname">Firstname:</label> <!-- "firstname" için etiket -->
+                <input type="text" id="firstname" name="firstname" required> <!-- Metin kutusu, zorunlu -->
+            </section>
+    
+            <section>
+              <label for="lastname">Name:</label>
+              <input type="text" id="name" name="lastname" required>
+            </section>
+    
+            <section>
+              <label for="age">Age:</label>
+              <input type="number" id="age" name="age" required> <!-- Sadece sayısal giriş -->
+            </section>
+    
+            <section>
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required> <!-- Telefon formatı -->
+            </section>
+    
+            <section>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required> <!-- E-posta formatı kontrolü -->
+            </section>
+    
+            <section>
+              <label for="student42">Student at 42?</label> <!-- Checkbox etiketi -->
+              <input type="checkbox" id="student" name="student42"> <!-- İşaret kutusu -->
+            </section>
+
+            <section>
+                <p>Gender:</p> <!-- Cinsiyet başlığı -->
+        
+                <!-- Radyo butonları (yalnızca biri seçilebilir) -->
+                <input type="radio" id="gender_male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+        
+                <input type="radio" id="gender_female" name="gender" value="Female">
+                <label for="female">Female</label>
+        
+                <input type="radio" id="gender_other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </section>
+            <section>
+                <!-- Buton tıklandığında displayFormContent() fonksiyonu çağrılır -->
+                <button type="submit" onclick="displayFormContents()">Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,17 @@
+Collecting git+https://github.com/jaraco/path.git
+  Cloning https://github.com/jaraco/path.git to /tmp/pip-req-build-efoax_u7
+  Resolved https://github.com/jaraco/path.git to commit 0f86209f11199ceaff788c73f96ea5b5ec2318ee
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: path
+  Building wheel for path (pyproject.toml): started
+  Building wheel for path (pyproject.toml): finished with status 'done'
+  Created wheel for path: filename=path-17.1.1-py3-none-any.whl size=23936 sha256=61fada30cce385deed84bbe07cec28cc5135ffdb68e4748478f31dacaa2fb917
+  Stored in directory: /tmp/pip-ephem-wheel-cache-kuaoxpcl/wheels/68/fb/9f/3b9db6f787730cf62eaed27cfb4d736877a5a6a5aca7dc802e
+Successfully built path
+Installing collected packages: path
+Successfully installed path-17.1.1
