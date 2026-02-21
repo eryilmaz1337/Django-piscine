@@ -1,0 +1,16 @@
+{% extends "ex01/base.html" %}
+
+{% block title %}Ex01: Display process of a static page.{% endblock %}
+
+{% block content %}
+<h1>Statik Sayfa Gösterim Süreci</h1>
+<p>Bir sayfanın tarayıcıda görünmesi için şu adımlar izlenir:</p>
+<ol>
+    <li><strong>Request:</strong> Tarayıcı sunucuya bir URL isteği gönderir.</li>
+    <li><strong>URL Resolver:</strong> Django <code>urls.py</code> dosyasında eşleşen yolu arar.</li>
+    <li><strong>View:</strong> Eşleşen view fonksiyonu çalışır, mantığı işler ve template'i çağırır.</li>
+    <li><strong>Template:</strong> HTML dosyası işlenir ve son hali oluşturulur.</li>
+    <li><strong>Response:</strong> Oluşturulan HTML, HTTP yanıtı olarak tarayıcıya döner.</li>
+</ol>
+
+{% endblock %}

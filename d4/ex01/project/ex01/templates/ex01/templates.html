@@ -1,0 +1,19 @@
+{% extends "ex01/base.html" %}
+{% load static %}
+
+{% block title %}Ex01: Template engine.{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'style2.css' %}">
+{% endblock %}
+
+{% block content %}
+<h1>Django Template Engine</h1>
+<p>Django şablon motorunun temel özellikleri:</p>
+<ul>
+    <li><strong>Blocks:</strong> <code>{% block name %} ... {% endblock %}</code> ile kalıtım yapılır.</li>
+    <li><strong>Loops:</strong> <code>{% for x in y %} ... {% endfor %}</code> ile döngü kurulur.</li>
+    <li><strong>If:</strong> <code>{% if condition %} ... {% endif %}</code> ile mantıksal kontrol yapılır.</li>
+    <li><strong>Variables:</strong> <code>{{ variable }}</code> ile veriler ekrana basılır.</li>
+</ul>
+{% endblock %}
